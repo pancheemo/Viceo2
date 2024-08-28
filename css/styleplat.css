@@ -1,0 +1,84 @@
+/* ESTILO DEL TÍTULO PRINCIPAL */
+h1.display-4 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ESTILO DEL HEADER */
+header {
+    background-image: url('../img/wallpaper.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 60px 0;
+}
+
+/* NAVBAR */
+.nav-link {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #cccccc;
+}
+
+/* ESTILO DE LAS TARJETAS */
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    color: #3e3769;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* BOTONES */
+.btn-primary {
+    background-color: #cccbce;
+    border-color: #b5b3b8;
+    color: #000;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b5b3b8;
+    border-color: #9d9aa1;
+    color: #fff;
+}
+
+/* AJUSTES RESPONSIVOS */
+@media (max-width: 768px) {
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    .card-img-top {
+        height: auto;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
